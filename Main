@@ -1,0 +1,128 @@
+#include <iostream>
+#include <string>
+#include <Ctime>
+#include <string>
+
+using namespace std;
+using std::cout;
+using std::cin;
+using std::string;
+
+//Variables
+char a = ' ';
+string pause = " ";
+
+//Functions
+int main();
+void instructions();
+void credits();
+
+//start coding functions
+void instructions()
+{
+cout<< string(50, '\n');
+    int instnum = 0;
+cout<<"    _            __                  __  _                 "<<endl;
+cout<<"   (_)___  _____/ /_ ______  _______/ /_(_)___  ____  _____"<<endl;
+cout<<"  / / __ \\/ ___/ __/ ___/ / / / ___/ __/ / __ \\/ __ \\/ ___/"<<endl;
+cout<<" / / / / (__  ) /_/ /  / /_/ / /__/ /_/ / /_/ / / / (__  ) "<<endl;
+cout<<"/_/_/ /_/____/\\__/_/   \\__,_/\\___/\\__/_/\\____/_/ /_/____/  "<<endl;
+cout<<""<<endl;
+
+instructions:
+
+cout<<"For instructions, enter the number next to the topic of your choice."<<endl;
+cout<<""<<endl;
+cout<<"Builds --------------- 1"<<endl;
+cout<<"Turns ---------------- 2"<<endl;
+cout<<"Overview ------------- 3"<<endl;
+cout<<"Conflicting Actions -- 4"<<endl;
+cout<<"States --------------- 5"<<endl;
+cout<<"Distance ------------- 6"<<endl;
+cout<<"Attacks & Desc.'s ---- 7"<<endl;
+cout<<"Back ----------------- 8"<<endl;
+
+cin>>instnum;
+
+switch (instnum)
+{
+    case 1:
+cout<<"There are three different types of 'builds' in Ninja."<<endl;
+cout<<"The builds are:"<<endl;
+cout<<"Light Build-"<<endl;
+    break;
+    case 2:
+        cout<<" "<<endl;
+    break;
+    case 3:
+        cout<<" "<<endl;
+    break;
+    case 4:
+        cout<<" "<<endl;
+    break;
+    case 5:
+        cout<<" "<<endl;
+    break;
+    case 6:
+        cout<<" "<<endl;
+    break;
+    case 7:
+        cout<<" "<<endl;
+    break;
+    case 8:
+        cout<< string(50, '\n');
+        main();
+    break;
+    default:
+        cout<<"Thats not an option! Try again ^_^"<<endl;
+        cout<<" "<<endl;
+        cout<<" "<<endl;
+        cout<<"Enter to continue..."<<endl;
+        cin>>(cin, pause);
+        goto instructions;
+}
+}
+
+void credits()
+{
+cout<< string(50, '\n');
+cout<<"Programmed by:"<<endl;
+cout<<"    .___             .__                            .__          "<<endl;
+cout<<"  __| _/____    _____|  |__     ____ _____     ____ |  |   ____  "<<endl;
+cout<<" / __ |\\__  \\  /  ___/  |  \\   /    \\\\__  \\   / ___\\|  | _/ __ \\ "<<endl;
+cout<<"/ /_/ | / __ \\_\\___ \\|   Y  \\ |   |  \\/ __ \\_/ /_/  >  |_\\  ___/ "<<endl;
+cout<<"\\____ |(____  /____  >___|  / |___|  (____  /\\___  /|____/\\___  >"<<endl;
+cout<<"     \\/     \\/     \\/     \\/       \\/     \\//_____/           \\/ "<<endl;
+}
+int main()
+{
+cout<<"   _  __            "<<endl;
+cout<<"  / |/ / () _  _  () _ "<<endl;
+cout<<" / || / /7 / \/ / //,'o|"<<endl;
+cout<<"/_/|_/ // /_n_/ // |_,7"<<endl;
+cout<<"             __//      "<<endl;
+cout<<"            |--/"<<endl;https://github.com/
+cout<<""<<endl;
+cout<<"To play, hit ENTER"<<endl;
+cout<<"To view instructions, enter I"<<endl;
+cout<<"To View credits, enter C"<<endl;
+
+ cin>>a;
+ cout<< string(50, '\n');
+switch (a)
+{
+
+
+case 'I':
+    instructions();
+    break;
+case 'C':
+    credits();
+    break;
+default:
+    cout<<"Thats not an option... Hit Enter to go back..."<<endl;
+    getline (cin, pause);
+}
+
+    return 0;
+}
