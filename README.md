@@ -1,2 +1,2 @@
 # Ninja
-Text Based Fighting Game
+Text Based Fighting Game written in C++
